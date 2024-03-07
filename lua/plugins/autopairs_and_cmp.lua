@@ -29,7 +29,6 @@ return {
       'hrsh7th/cmp-buffer',
       'hrsh7th/cmp-cmdline',
       'windwp/nvim-autopairs',
-
       -- If you want to add a bunch of pre-configured snippets,
       --    you can use this plugin to help you. It even has snippets
       --    for various frameworks/libraries/etc. but you will have to
@@ -46,7 +45,7 @@ return {
 
       require('nvim-autopairs').setup()
       -- Integrate nvim-autopairs with cmp
-      cmp.event.on('confirm_done', cmp_autopairs.on_confirm_done())
+      cmp.event:on('confirm_done', cmp_autopairs.on_confirm_done())
 
       cmp.setup {
         snippet = {
