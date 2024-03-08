@@ -2,7 +2,6 @@ return {
   { -- Autocompletion
     'hrsh7th/nvim-cmp',
     event = 'InsertEnter',
-    -- TODO: Path and buffer completion doesnt work
     dependencies = {
       -- Snippet Engine & its associated nvim-cmp source
       {
