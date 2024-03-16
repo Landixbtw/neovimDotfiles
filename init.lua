@@ -66,7 +66,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require 'user.options' -- This gets the nvim options. Leader key line numbers etc.
 require 'user.highlight_on_yank'
-
+require 'user.keymaps'
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup {
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically

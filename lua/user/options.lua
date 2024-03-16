@@ -28,7 +28,6 @@ vim.opt.clipboard = 'unnamedplus'
 
 -- Enable break indent
 vim.opt.breakindent = true
-
 -- Save undo history
 vim.opt.undofile = true
 
@@ -62,6 +61,8 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+-- Makes it so that, the "swp", doesnt pop up everytime.
+vim.opt.shortmess = 'A'
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 

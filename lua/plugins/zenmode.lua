@@ -21,7 +21,7 @@ return {
         tmux = { enabled = false }, --disables tmux statusline
         alacritty = {
           enabled = true,
-          font = '13', -- font size increases to 13
+          font = '14', -- font size increases to x
         },
       },
     },
