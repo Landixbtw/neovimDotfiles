@@ -15,6 +15,11 @@ vim.opt.number = true
 --  Experiment for yourself to see if you like it!
 vim.opt.relativenumber = true
 
+-- Set tabs to 2 spaces
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.expandtab = true
+
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
 
@@ -26,8 +31,13 @@ vim.opt.showmode = false
 --  See `:help 'clipboard'`
 vim.opt.clipboard = 'unnamedplus'
 
--- Enable break indent
+-- Enable auto indenting and set it to spaces
+vim.opt.smartindent = true
+vim.opt.shiftwidth = 2
+
+-- Enable smart indenting (see https://stackoverflow.com/questions/1204149/smart-wrap-in-vim)
 vim.opt.breakindent = true
+
 -- Save undo history
 vim.opt.undofile = true
 
@@ -65,6 +75,9 @@ vim.opt.scrolloff = 10
 vim.opt.shortmess = 'A'
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
+
+-- Gives the orientation line at X characters
+vim.opt.colorcolumn = '80'
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
