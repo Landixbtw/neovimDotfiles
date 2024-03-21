@@ -2,6 +2,7 @@ return {
   -- Lua
   {
     'folke/twilight.nvim',
+    enabled = false,
     opts = {
       -- your configuration comes here
       -- or leave it empty to use the default settings
@@ -19,8 +20,13 @@ return {
         'method',
         'table',
         'if_statement',
+        'for_loop',
+        'while_loop',
       },
-      exclude = { 'md' },
+      exclude = { 'markdown' },
     },
+    config = function()
+      vim.keymap.set('n', '<leader>tt', ':Twilight<CR>', { silent = true, desc = 'Toggle Twighlight' })
+    end,
   },
 }
