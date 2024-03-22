@@ -133,7 +133,7 @@ return {
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         clangd = {},
-        -- gopls = {},
+        gopls = {},
         pyright = {},
         rust_analyzer = {},
         marksman = {},
@@ -189,8 +189,8 @@ return {
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format lua code
         'codelldb',
-        'clangd',
-        'clang-format',
+        --'clangd',
+        --'clang-format',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
