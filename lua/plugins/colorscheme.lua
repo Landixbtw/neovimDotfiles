@@ -5,15 +5,22 @@ return {
     --
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`
     --'neanias/everforest-nvim',
-    'ribru17/bamboo.nvim',
+    --'ribru17/bamboo.nvim',
+    'mcchrish/zenbones.nvim',
+    --'NLKNguyen/papercolor-theme', -- Name, "PaperColor"
+    --'shaunsingh/nord.nvim',
     -- default colorscheme would be folke/tokyonight.nvim
     --'folke/tokyonight.nvim',
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
     priority = 1000, -- make sure to load this before all the other start plugins
     --name = 'rose-pine',
+    dependencies = {
+      'rktjmp/lush.nvim',
+    },
     config = function()
+      vim.g.zenbones_compat = 1
       -- Load the colorscheme here
-      vim.cmd.colorscheme 'bamboo'
+      vim.cmd.colorscheme 'zenwritten'
 
       -- You can configure highlights by doing something like
       --vim.cmd.hi 'Comment gui=none'

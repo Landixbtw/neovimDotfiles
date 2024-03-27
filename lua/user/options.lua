@@ -79,6 +79,8 @@ vim.opt.shortmess = 'A'
 -- Gives the orientation line at X characters
 vim.opt.colorcolumn = '80'
 
+-- REQUIRED FOR ZENBONES COLORSCHEME
+vim.opt.termguicolors = true
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')

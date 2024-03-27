@@ -7,3 +7,4 @@ I have added my own taste to it. And I am constantly looking for new and exictin
 
 ### TODO
 [] debugger, for c cpp rust asm
+[] maybe add codium AI
