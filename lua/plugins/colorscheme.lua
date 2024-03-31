@@ -6,9 +6,10 @@ return {
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`
     --'neanias/everforest-nvim',
     --'ribru17/bamboo.nvim',
-    'mcchrish/zenbones.nvim',
+    --'mcchrish/zenbones.nvim',
     --'NLKNguyen/papercolor-theme', -- Name, "PaperColor"
     --'shaunsingh/nord.nvim',
+    'NTBBloodbath/doom-one.nvim',
     -- default colorscheme would be folke/tokyonight.nvim
     --'folke/tokyonight.nvim',
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
@@ -20,10 +21,10 @@ return {
     config = function()
       vim.g.zenbones_compat = 1
       -- Load the colorscheme here
-      vim.cmd.colorscheme 'zenwritten'
+      vim.cmd.colorscheme 'doom-one'
 
       -- You can configure highlights by doing something like
-      --vim.cmd.hi 'Comment gui=none'
+      vim.cmd.hi 'Comment gui=none'
     end,
   },
 }
