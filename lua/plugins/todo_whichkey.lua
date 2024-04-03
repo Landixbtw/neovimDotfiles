@@ -55,4 +55,5 @@ return {
       }
     end,
   },
+  vim.keymap.set('n', '<leader>st', ':TodoTelescope<CR>', { desc = 'Search Todos across project' }),
 }

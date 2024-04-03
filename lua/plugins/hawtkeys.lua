@@ -11,4 +11,5 @@ return {
     leader = ' ',
     keyboardLayout = 'qwertz',
   },
+  -- NOTE: What does hawtkeys do ?
 }

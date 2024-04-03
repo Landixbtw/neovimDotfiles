@@ -1,7 +1,7 @@
 return {
   {
     'stevearc/oil.nvim',
-    enabled = false,
+    enabled = true,
     opts = {
       default_file_explorer = true,
       colums = {
@@ -61,6 +61,6 @@ return {
     },
     -- Optional dependencies
     dependencies = { 'nvim-tree/nvim-web-devicons' },
-    vim.keymap.set('n', '<leader>e', ':Oil --float<CR>', { desc = 'Open parent directory' }),
+    vim.keymap.set('n', '-', ':Oil --float<CR>', { desc = 'Open parent directory' }),
   },
 }

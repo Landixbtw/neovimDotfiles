@@ -8,5 +8,10 @@ return {
   enabled = true,
   config = function()
     vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>', {})
+    require('neo-tree').setup {
+      follow_current_file = {
+        enabled = true,
+      },
+    }
   end,
 }
