@@ -6,27 +6,30 @@ return {
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`
     --'neanias/everforest-nvim',
     --'ribru17/bamboo.nvim',
-    --'mcchrish/zenbones.nvim',
     --'NLKNguyen/papercolor-theme', -- Name, "PaperColor"
-    --'NTBBloodbath/doom-one.nvim',
-    'olivercederborg/poimandres.nvim',
+    --'olivercederborg/poimandres.nvim',
     -- default colorscheme would be folke/tokyonight.nvim
     --'folke/tokyonight.nvim',
+    --'aktersnurra/no-clown-fiesta.nvim',
+    --'felipeagc/fleet-theme-nvim',
+    --'LunarVim/templeos.nvim',
+    'namrabtw/rusty.nvim',
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
     priority = 1000, -- make sure to load this before all the other start plugins
-    --name = 'rose-pine',
+    --name = 'biscuit',
     dependencies = {
       'rktjmp/lush.nvim',
     },
     config = function()
       --vim.g.zenbones_compat = 1
-      require('poimandres').setup {
-        bold_vert_split = false,
-        disable_background = true,
-        disable_float_background = true,
-      }
+      -- require('poimandres').setup {
+      --   bold_vert_split = false,
+      --   disable_background = true,
+      --   disable_float_background = true,
+      -- }
+
       -- Load the colorscheme here
-      vim.cmd.colorscheme 'poimandres'
+      vim.cmd.colorscheme 'rusty'
 
       -- You can configure highlights by doing something like
       vim.cmd.hi 'Comment gui=none'
