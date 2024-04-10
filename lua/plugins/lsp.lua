@@ -137,6 +137,9 @@ return {
         pyright = {},
         rust_analyzer = {},
         marksman = {},
+        cssls = {},
+        html = {},
+        yamlls = {},
 
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
@@ -192,6 +195,8 @@ return {
         'clangd',
         'clang-format',
         'black',
+        'cssls',
+        'html',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
