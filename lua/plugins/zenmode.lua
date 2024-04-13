@@ -2,6 +2,7 @@ return {
   -- Lua
   {
     'folke/zen-mode.nvim',
+    lazy = false,
     opts = {
       plugins = {
         twilight = false,
