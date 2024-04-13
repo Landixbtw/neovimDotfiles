@@ -5,7 +5,7 @@ return {
     'nvim-tree/nvim-web-devicons',
     'MunifTanjim/nui.nvim',
   },
-  enabled = true,
+  enabled = false,
   config = function()
     vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>', {})
     require('neo-tree').setup {
