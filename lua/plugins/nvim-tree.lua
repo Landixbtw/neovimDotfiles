@@ -9,8 +9,8 @@ return {
   },
 
   vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', { desc = 'Open File tree ' }),
-  vim.keymap.set('n', '<leader>ef', ':NvimTreeFindFile<CR>', { desc = 'Move the cursor in the tree for the current buffer, opening folders if needed.' }),
-  vim.keymap.set('n', '<leader>ec', ':NvimTreeCollapse<CR>', { desc = 'Collapse nvim-tree recursevly' }),
+  vim.keymap.set('n', '<leader>tf', ':NvimTreeFindFile<CR>', { desc = 'Move the cursor for the current buffer' }),
+  vim.keymap.set('n', '<leader>tc', ':NvimTreeCollapse<CR>', { desc = 'Collapse nvim-tree recursevly' }),
   config = function()
     require('nvim-tree').setup {}
   end,
