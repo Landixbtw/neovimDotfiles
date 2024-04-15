@@ -10,5 +10,5 @@ return {
       },
     },
   },
-  vim.keymap.set('n', '<leader>nt', ':ToggleTerm<CR>', { desc = 'Opens a terminal' }),
+  vim.keymap.set('n', '<leader>tt', ':ToggleTerm<CR>', { desc = 'Opens a terminal' }),
 }
