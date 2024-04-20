@@ -1,4 +1,5 @@
-# Kickstart.nvim
+# I refactored my config its now in https://github.com/Landixbtw/init
+## Kickstart.nvim
 
 ## Introduction
 
